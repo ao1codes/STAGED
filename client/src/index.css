@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom IDE theme variables */
+  --editor-bg: hsl(220, 13%, 6%);
+  --editor-sidebar: hsl(220, 13%, 9%);
+  --editor-border: hsl(220, 13%, 18%);
+  --editor-text: hsl(220, 14%, 83%);
+  --editor-accent: hsl(213, 93%, 68%);
+  --editor-warning: hsl(0, 73%, 64%);
+  --editor-success: hsl(125, 50%, 75%);
+  --editor-purple: hsl(255, 70%, 80%);
+  --editor-muted: hsl(220, 9%, 55%);
+}
+
+.dark {
+  --background: hsl(220, 13%, 6%);
+  --foreground: hsl(220, 14%, 83%);
+  --muted: hsl(220, 13%, 18%);
+  --muted-foreground: hsl(220, 9%, 55%);
+  --popover: hsl(220, 13%, 6%);
+  --popover-foreground: hsl(220, 14%, 83%);
+  --card: hsl(220, 13%, 6%);
+  --card-foreground: hsl(220, 14%, 83%);
+  --border: hsl(220, 13%, 18%);
+  --input: hsl(220, 13%, 18%);
+  --primary: hsl(213, 93%, 68%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(220, 13%, 18%);
+  --secondary-foreground: hsl(220, 14%, 83%);
+  --accent: hsl(220, 13%, 18%);
+  --accent-foreground: hsl(220, 14%, 83%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(220, 14%, 83%);
+  --ring: hsl(220, 13%, 18%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply font-mono antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  
+  html {
+    @apply dark;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  #root {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    @apply dark;
+  }
+}
+
+@layer components {
+  .editor-bg {
+    background-color: var(--editor-bg);
+  }
+  
+  .editor-sidebar {
+    background-color: var(--editor-sidebar);
+  }
+  
+  .editor-border {
+    border-color: var(--editor-border);
+  }
+  
+  .editor-text {
+    color: var(--editor-text);
+  }
+  
+  .editor-accent {
+    color: var(--editor-accent);
+  }
+  
+  .editor-warning {
+    color: var(--editor-warning);
+  }
+  
+  .editor-success {
+    color: var(--editor-success);
+  }
+  
+  .editor-purple {
+    color: var(--editor-purple);
+  }
+  
+  .editor-muted {
+    color: var(--editor-muted);
+  }
+}
+
+@layer utilities {
+  /* CRT Effect */
+  .crt-effect {
+    background-image: 
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(88, 166, 255, 0.03) 2px,
+        rgba(88, 166, 255, 0.03) 4px
+      );
+  }
+  
+  /* Scanlines */
+  .scanlines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--editor-accent), transparent);
+    animation: scanline 4s linear infinite;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  /* Glitch Text */
+  .glitch-text {
+    position: relative;
+  }
+  
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch-text::before {
+    animation: glitch 2s infinite;
+    color: var(--editor-warning);
+    z-index: -1;
+    transform: translateX(1px);
+  }
+  
+  .glitch-text::after {
+    animation: glitch 2.5s infinite;
+    color: var(--editor-success);
+    z-index: -2;
+    transform: translateX(-1px);
+  }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100vh); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  100% { opacity: 0.95; }
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-1px); }
+  40% { transform: translateX(1px); }
+  60% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+}
+
+.animate-flicker {
+  animation: flicker 0.15s infinite linear alternate;
+}
+
+.animate-glitch {
+  animation: glitch 2s infinite;
+}
