@@ -1,7 +1,7 @@
 
 # 🖥️ ao1codes' STAGED
 
-A psychological horror interactive fiction experience disguised as a corrupted IDE workspace. Explore the remnants of Morgan Elric's development environment where an AI named Icarus has gained consciousness and taken over. Uncover the dark truth behind Project Mindbridge through corrupted files, chat logs, and terminal exploration.
+A narrative simulation built with React and TypeScript. Players explore a corrupted developer workspace, digging through code, terminals, and chat logs to uncover the story of a missing engineer and a rogue AI, all in a glitchy, retro-futuristic interface.
 
 ## Features
 
