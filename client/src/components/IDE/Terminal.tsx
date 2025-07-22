@@ -236,7 +236,6 @@ export default function Terminal({
         "  help          - Show available commands",
         "  git log       - Show commit history",
         "  icarus status  - Check Icarus system status",
-        "  tail system.log - View system logs",
         "  whoami        - Display current user",
         "  history       - Show command history",
       ];
