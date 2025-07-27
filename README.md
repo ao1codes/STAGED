@@ -1,7 +1,7 @@
 
 # 🖥️ ao1codes' STAGED
 
-A narrative simulation built with React and TypeScript. Players explore a corrupted developer workspace, digging through code, terminals, and chat logs to uncover the story of a missing engineer and a rogue AI, all in a glitchy, retro-futuristic interface.
+A narrative simulation built with React and TypeScript. Includes a corrupted developer workspace with explorable code, terminals, and chat logs that reveal the story of a missing engineer and a rogue AI, in a glitchy, retro-futuristic interface.
 
 ## Features
 

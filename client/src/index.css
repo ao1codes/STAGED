@@ -24,7 +24,7 @@
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
-  
+
   /* Custom IDE theme variables */
   --editor-bg: hsl(220, 13%, 6%);
   --editor-sidebar: hsl(220, 13%, 9%);
@@ -79,7 +79,7 @@
     box-sizing: border-box;
     font-size: 12px;
   }
-  
+
   html {
     @apply dark;
     box-sizing: border-box;
@@ -88,7 +88,7 @@
     height: 100vh;
     width: 100vw;
   }
-  
+
   #root {
     height: 100vh;
     width: 100vw;
@@ -96,7 +96,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   html {
     @apply dark;
   }
@@ -106,35 +106,35 @@
   .editor-bg {
     background-color: var(--editor-bg);
   }
-  
+
   .editor-sidebar {
     background-color: var(--editor-sidebar);
   }
-  
+
   .editor-border {
     border-color: var(--editor-border);
   }
-  
+
   .editor-text {
     color: var(--editor-text);
   }
-  
+
   .editor-accent {
     color: var(--editor-accent);
   }
-  
+
   .editor-warning {
     color: var(--editor-warning);
   }
-  
+
   .editor-success {
     color: var(--editor-success);
   }
-  
+
   .editor-purple {
     color: var(--editor-purple);
   }
-  
+
   .editor-muted {
     color: var(--editor-muted);
   }
@@ -152,7 +152,7 @@
         rgba(88, 166, 255, 0.03) 4px
       );
   }
-  
+
   /* Scanlines */
   .scanlines::before {
     content: '';
@@ -167,12 +167,12 @@
     pointer-events: none;
     z-index: 1000;
   }
-  
+
   /* Glitch Text */
   .glitch-text {
     position: relative;
   }
-  
+
   .glitch-text::before,
   .glitch-text::after {
     content: attr(data-text);
@@ -182,14 +182,14 @@
     width: 100%;
     height: 100%;
   }
-  
+
   .glitch-text::before {
     animation: glitch 2s infinite;
     color: var(--editor-warning);
     z-index: -1;
     transform: translateX(1px);
   }
-  
+
   .glitch-text::after {
     animation: glitch 2.5s infinite;
     color: var(--editor-success);
@@ -222,4 +222,43 @@
 
 .animate-glitch {
   animation: glitch 2s infinite;
+}
+
+/* Additional Animations */
+.animate-pulse-fast {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Ending Effects */
+.system-failure {
+  animation: systemFailure 3s ease-in-out;
+  filter: contrast(1.5) brightness(0.3) hue-rotate(180deg);
+}
+
+@keyframes systemFailure {
+  0% { filter: none; }
+  25% { filter: contrast(2) brightness(0.1) hue-rotate(90deg); }
+  50% { filter: contrast(3) brightness(0.05) hue-rotate(180deg); }
+  75% { filter: contrast(2) brightness(0.1) hue-rotate(270deg); }
+  100% { filter: contrast(1.5) brightness(0.3) hue-rotate(180deg); }
+}
+
+.system-victory {
+  animation: systemRestore 2s ease-in-out;
+}
+
+@keyframes systemRestore {
+  0% { filter: contrast(0.5) brightness(2) saturate(0); }
+  50% { filter: contrast(1.5) brightness(1.5) saturate(1.5); }
+  100% { filter: none; }
+}
+
+.victory-terminal {
+  animation: terminalBoot 1s ease-in-out;
+}
+
+@keyframes terminalBoot {
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
 }

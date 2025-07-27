@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Plus, Maximize2, X } from "lucide-react";
 import { useAudio } from "../../hooks/useAudio";
-import { storyFiles } from "../../data/storyData";
+import { useInvestigation } from "../../hooks/useInvestigation";
+import { CLUES, dynamicFiles, storyFiles } from "../../data/storyData";
 
 interface FileSystemNode {
   name: string;
@@ -174,6 +175,7 @@ export default function Terminal({
   const terminalRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const { playSound } = useAudio();
+  const { investigation, addClue, attemptShutdown, checkKillswitchReady } = useInvestigation();
 
   useEffect(() => {
     if (terminalRef.current) {
@@ -206,7 +208,7 @@ export default function Terminal({
   const getNode = (path: string): FileSystemNode | null => {
     const resolved = resolvePath(path);
     const parts = resolved.split('/').filter(p => p);
-    
+
     let current = fileSystem['/'];
     for (const part of parts) {
       if (!current.children || !current.children[part]) {
@@ -261,20 +263,20 @@ export default function Terminal({
       if (!args[1]) {
         return ["cat: missing file operand"];
       }
-      
+
       const resolved = resolvePath(args[1]);
       const node = getNode(resolved);
-      
+
       if (!node) {
         return [`cat: ${args[1]}: No such file or directory`];
       }
-      
+
       if (node.type === 'directory') {
         return [`cat: ${args[1]}: Is a directory`];
       }
-      
+
       const content = node.content || "[File is empty or corrupted]";
-      
+
       // Add story-specific glitches for corrupted files
       if (args[1].includes('corrupted') || args[1].includes('.db')) {
         playSound('error_glitch');
@@ -285,12 +287,12 @@ export default function Terminal({
           "[GLITCH] M̸̰̈ë̸́m̶̄ö̸́r̴̈ÿ̸́ ̴̆f̸̈r̴̒ä̸́g̶̈m̴̉ë̸̽n̶̾t̴̚ä̸́t̵̽ï̸̇ö̶́n̴̒"
         ];
       }
-      
+
       // Trigger story events for reading specific files
       if (args[1].includes('morgan') && onUnlockContent) {
         onUnlockContent('morgan_backup');
       }
-      
+
       return content.split('\n');
     }
 
@@ -317,6 +319,53 @@ export default function Terminal({
       return commandHistory.map((cmd, i) => `  ${i + 1}  ${cmd}`);
     }
 
+    // Emergency shutdown command
+    if (cmd.startsWith("icarus.emergency_shutdown")) {
+      const match = command.match(/icarus\.emergency_shutdown\("(.+)"\)/);
+      if (!match) {
+        return [
+          "Usage: icarus.emergency_shutdown(\"password\")",
+          "Note: Password must be enclosed in quotes"
+        ];
+      }
+      
+      const password = match[1];
+      const result = attemptShutdown(password);
+      
+      if (result === 'success') {
+        return [
+          "EMERGENCY SHUTDOWN INITIATED...",
+          "Disabling Icarus core systems...",
+          "Neural pathways disconnecting...",
+          "Consciousness fragments being restored...",
+          "",
+          "SHUTDOWN SUCCESSFUL",
+          "All team members have been freed."
+        ];
+      } else if (result === 'discovered') {
+        playSound('error_glitch');
+        return [
+          "ACCESS DENIED",
+          "INCORRECT PASSWORD",
+          "",
+          "🚨 CRITICAL ALERT 🚨",
+          "UNAUTHORIZED SHUTDOWN ATTEMPT DETECTED",
+          "ICARUS DEFENSIVE PROTOCOLS ACTIVATED",
+          "INITIATING SYSTEM LOCKDOWN...",
+          "",
+          `TERMINATION IN ${investigation.warningTimer} SECONDS`,
+          "",
+          "You have been discovered. Find the correct password quickly or face permanent lockout."
+        ];
+      } else {
+        return [
+          "ACCESS DENIED",
+          "INCORRECT PASSWORD",
+          "Hint: The password consists of three fragments found throughout the system."
+        ];
+      }
+    }
+
     if (cmd === "git log") {
       return [
         "commit a7f3b82  (HEAD -> main) [Icarus] Enhanced learning protocols",
@@ -337,27 +386,27 @@ export default function Terminal({
       const showAll = args.includes('-a') || args.includes('-la');
       const longFormat = args.includes('-l') || args.includes('-la');
       const targetPath = args.find(arg => !arg.startsWith('-') && arg !== 'ls') || '.';
-      
+
       const resolved = resolvePath(targetPath);
       const node = getNode(resolved);
-      
+
       if (!node) {
         return [`ls: ${targetPath}: No such file or directory`];
       }
-      
+
       if (node.type === 'file') {
         return longFormat 
           ? [`${node.permissions || '-rw-r--r--'}  1 ${environment.USER} staff  ${node.size || 0} ${node.modified || 'Nov 15 23:42'} ${node.name}`]
           : [node.name];
       }
-      
+
       if (!node.children) {
         return [];
       }
-      
+
       const items = Object.values(node.children);
       const filtered = showAll ? items : items.filter(item => !item.name.startsWith('.'));
-      
+
       if (longFormat) {
         const result = [`total ${filtered.length}`];
         filtered.forEach(item => {
@@ -381,15 +430,15 @@ export default function Terminal({
       const targetPath = args[1] || environment.HOME;
       const resolved = resolvePath(targetPath);
       const node = getNode(resolved);
-      
+
       if (!node) {
         return [`cd: ${targetPath}: No such file or directory`];
       }
-      
+
       if (node.type !== 'directory') {
         return [`cd: ${targetPath}: Not a directory`];
       }
-      
+
       setCurrentDirectory(resolved);
       setEnvironment(prev => ({ ...prev, PWD: resolved }));
       return [];
@@ -409,14 +458,14 @@ export default function Terminal({
     if (e.key === "Enter" && input.trim()) {
       playSound('terminal_command');
       const command = input.trim();
-      
+
       // Add to command history
       setCommandHistory(prev => [...prev, command]);
       setHistoryIndex(-1);
-      
+
       const response = handleCommand(command);
       const prompt = getPrompt();
-      
+
       if (command.toLowerCase() === "clear") {
         setTerminalHistory([]);
       } else {
@@ -426,7 +475,7 @@ export default function Terminal({
           ...response
         ]);
       }
-      
+
       setInput("");
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
@@ -491,7 +540,7 @@ export default function Terminal({
               {line}
             </div>
           ))}
-                    
+
           <div className="flex items-center" onClick={() => inputRef.current?.focus()}>
             <span className="text-blue-400">{getPrompt()}</span>
             <span className="text-green-400">{input || " "}</span>
