@@ -34,7 +34,7 @@ export default function Workspace() {
     if (investigation.gameState === 'game_over') {
       // Stop ambient sounds and play dramatic failure sound
       stopSound('ambient_hum');
-      playSound('system_shutdown');
+      playSound('error_glitch');
       
       // Add dramatic screen corruption effect
       document.body.classList.add('system-failure');
@@ -135,7 +135,8 @@ export default function Workspace() {
     }
   }, [investigation.gameState, stopSound, playSound]);
 
-
+  // Glitch effects interval
+  useEffect(() => {
     const glitchInterval = setInterval(() => {
       const glitchElements = document.querySelectorAll('.glitch-text');
       glitchElements.forEach(el => {

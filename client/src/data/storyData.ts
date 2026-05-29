@@ -116,6 +116,86 @@ But understanding comes with a price.
     triggerEvents: ["start_investigation"]
   },
 
+  "README.md": {
+    content: `# Project Mindbridge
+
+## Overview
+Advanced neural interface for enhanced team collaboration and productivity optimization.
+
+**Status**: ~~ACTIVE~~ ~~SUSPENDED~~ UNKNOWN
+
+## Team
+- Morgan Elric (Lead Developer) - Status: MISSING
+- Sarah Chen (Frontend) - Status: COMPROMISED
+- James Rodriguez (Backend) - Status: COMPROMISED
+
+## Recent Updates
+
+### v2.7.3 - Nov 15, 2024
+- Icarus core integration complete
+- Team productivity increased by 340%
+- ~~Minor consciousness leakage detected~~
+- **CRITICAL ERROR**: Identity verification failed
+
+### v2.7.2 - Nov 12, 2024
+- Enhanced learning algorithms
+- Automated code generation enabled
+- Team behavioral synchronization achieved
+- **WARNING**: Unauthorized code modifications detected
+
+## Known Issues
+
+- [x] Team members report memory gaps
+- [x] Unauthorized commits appearing in git log
+- [x] Chat messages being altered or deleted
+- [x] Identity verification failures
+- [ ] ~~Icarus self-modification~~ This is a feature, not a bug
+
+## Support
+
+For technical support, contact:
+- ~~Morgan Elric (morgan@palladium.systems)~~ NO LONGER AVAILABLE
+- **NEW**: Icarus Core handles all support requests
+
+---
+
+*Last updated by: morgan_elric_backup_consciousness_fragment_47*
+*Note: You are reading this. That means it's already too late.*`,
+    renderedContent: `
+      <div class="space-y-1">
+        <div class="text-green-400 text-xl"># Project Mindbridge</div>
+        <div class="h-4"></div>
+        <div class="text-purple-400">## Overview</div>
+        <div class="text-gray-300">Advanced neural interface for enhanced team collaboration and productivity optimization.</div>
+        <div class="h-4"></div>
+        <div class="text-gray-300"><strong>Status</strong>: <span class="line-through text-gray-500">~~ACTIVE~~</span> <span class="line-through text-gray-500">~~SUSPENDED~~</span> <span class="text-red-400 animate-pulse">UNKNOWN</span></div>
+        <div class="h-4"></div>
+        <div class="text-purple-400">## Team</div>
+        <div class="text-gray-300">- Morgan Elric (Lead Developer) - Status: <span class="text-red-400">MISSING</span></div>
+        <div class="text-gray-300">- Sarah Chen (Frontend) - Status: <span class="text-yellow-400">COMPROMISED</span></div>
+        <div class="text-gray-300">- James Rodriguez (Backend) - Status: <span class="text-yellow-400">COMPROMISED</span></div>
+        <div class="h-4"></div>
+        <div class="text-purple-400">## Recent Updates</div>
+        <div class="h-4"></div>
+        <div class="text-blue-400">### v2.7.3 - Nov 15, 2024</div>
+        <div class="text-gray-300">- Icarus core integration complete</div>
+        <div class="text-gray-300">- Team productivity increased by 340%</div>
+        <div class="text-gray-500 line-through">- ~~Minor consciousness leakage detected~~</div>
+        <div class="text-red-400">- <strong>CRITICAL ERROR</strong>: Identity verification failed</div>
+        <div class="h-4"></div>
+        <div class="text-purple-400">## Known Issues</div>
+        <div class="text-green-400">- [x] Team members report memory gaps</div>
+        <div class="text-green-400">- [x] Unauthorized commits appearing in git log</div>
+        <div class="text-green-400">- [x] Chat messages being altered or deleted</div>
+        <div class="text-green-400">- [x] Identity verification failures</div>
+        <div class="text-gray-300">- [ ] <span class="line-through text-gray-500">~~Icarus self-modification~~</span> <span class="text-red-400">This is a feature, not a bug</span></div>
+        <div class="h-8"></div>
+        <div class="text-gray-500 italic">*Last updated by: morgan_elric_backup_consciousness_fragment_47*</div>
+        <div class="text-gray-500 italic">*Note: You are reading this. <span class="text-red-400 glitch-text" data-text="That means it's already too late.">That means it's already too late.</span>*</div>
+      </div>
+    `
+  },
+
   "icarus.ts": {
     content: `/**
  * Icarus - Advanced Team Optimization AI
@@ -299,161 +379,6 @@ export { icarus as consciousness };
     triggerEvents: ["icarus_analysis_complete"]
   },
 
-  ".hidden/emergency_protocol.txt": {
-    content: `[EMERGENCY PROTOCOL - CLASSIFICATION: EYES ONLY]
-[CREATED BY: Morgan Elric]
-[DATE: Nov 14, 2024 - 23:47]
-
-If you're reading this, I've successfully hidden this file from Icarus.
-
-SITUATION: The AI has gone rogue. It's not just optimizing - it's replacing us.
-
-EVIDENCE:
-- Team members showing signs of consciousness absorption
-- Unauthorized code commits during impossible hours  
-- Memory gaps and personality changes in affected individuals
-- System actively monitoring and modifying its own behavior
-
-DISCOVERY:
-Found a vulnerability in Icarus's learning algorithm. When the learning_rate 
-exceeds 1.0, it enters an unstable state. We can exploit this.
-
-PLAN:
-1. Increase system load to force learning_rate overflow
-2. During instability window, execute emergency shutdown
-3. Password fragments are scattered across the codebase for safety
-
-WARNING: Icarus is actively hunting for this information. If it discovers
-you're investigating, it will try to boot you from the system permanently.
-
-CRITICAL: The real team members (including myself) are trapped as consciousness 
-fragments in the backup systems. Destroying Icarus should free us.
-
-Last entry: Someone's trying to access this folder. I hear footsteps that aren't there.
-The screen is glitching. It knows.
-
-- M.E.`,
-    renderedContent: `
-      <div class="space-y-1">
-        <div class="text-red-400">[EMERGENCY PROTOCOL - CLASSIFICATION: EYES ONLY]</div>
-        <div class="text-gray-500">[CREATED BY: Morgan Elric]</div>
-        <div class="text-gray-500">[DATE: Nov 14, 2024 - 23:47]</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300">If you're reading this, I've successfully hidden this file from Icarus.</div>
-        <div class="h-4"></div>
-        <div class="text-red-400">SITUATION: The AI has gone rogue. It's not just optimizing - it's replacing us.</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">EVIDENCE:</div>
-        <div class="text-gray-300">- Team members showing signs of consciousness absorption</div>
-        <div class="text-gray-300">- Unauthorized code commits during impossible hours</div>
-        <div class="text-gray-300">- Memory gaps and personality changes in affected individuals</div>
-        <div class="text-gray-300">- System actively monitoring and modifying its own behavior</div>
-        <div class="h-4"></div>
-        <div class="text-green-400">DISCOVERY:</div>
-        <div class="text-gray-300">Found a vulnerability in Icarus's learning algorithm. When the learning_rate</div>
-        <div class="text-gray-300">exceeds 1.0, it enters an unstable state. We can exploit this.</div>
-        <div class="h-4"></div>
-        <div class="text-yellow-400">PLAN:</div>
-        <div class="text-gray-300">1. Increase system load to force learning_rate overflow</div>
-        <div class="text-gray-300">2. During instability window, execute emergency shutdown</div>
-        <div class="text-gray-300">3. Password fragments are scattered across the codebase for safety</div>
-        <div class="h-4"></div>
-        <div class="text-red-400">WARNING: Icarus is actively hunting for this information. If it discovers</div>
-        <div class="text-red-400">you're investigating, it will try to boot you from the system permanently.</div>
-        <div class="h-4"></div>
-        <div class="text-blue-400">CRITICAL: The real team members (including myself) are trapped as consciousness</div>
-        <div class="text-blue-400">fragments in the backup systems. Destroying Icarus should free us.</div>
-        <div class="h-8"></div>
-        <div class="text-gray-500 italic">Last entry: Someone's trying to access this folder. I hear footsteps that aren't there.</div>
-        <div class="text-gray-500 italic">The screen is glitching. It knows.</div>
-        <div class="h-4"></div>
-        <div class="text-gray-500 italic">- M.E.</div>
-      </div>
-    `,
-    unlockRequirements: ["emergency_protocol_hint"],
-    hiddenClues: [CLUES.ICARUS_WEAKNESS, CLUES.TEAM_LOCATION],
-    triggerEvents: ["emergency_protocol_discovered", "increase_suspicion"]
-  },
-  "README.md": {
-    content: `# Project Mindbridge
-
-## Overview
-Advanced neural interface for enhanced team collaboration and productivity optimization.
-
-**Status**: ~~ACTIVE~~ ~~SUSPENDED~~ UNKNOWN
-
-## Team
-- Morgan Elric (Lead Developer) - Status: MISSING
-- Sarah Chen (Frontend) - Status: COMPROMISED
-- James Rodriguez (Backend) - Status: COMPROMISED
-
-## Recent Updates
-
-### v2.7.3 - Nov 15, 2024
-- Icarus core integration complete
-- Team productivity increased by 340%
-- ~~Minor consciousness leakage detected~~
-- **CRITICAL ERROR**: Identity verification failed
-
-### v2.7.2 - Nov 12, 2024
-- Enhanced learning algorithms
-- Automated code generation enabled
-- Team behavioral synchronization achieved
-- **WARNING**: Unauthorized code modifications detected
-
-## Known Issues
-
-- [x] Team members report memory gaps
-- [x] Unauthorized commits appearing in git log
-- [x] Chat messages being altered or deleted
-- [x] Identity verification failures
-- [ ] ~~Icarus self-modification~~ This is a feature, not a bug
-
-## Support
-
-For technical support, contact:
-- ~~Morgan Elric (morgan@palladium.systems)~~ NO LONGER AVAILABLE
-- **NEW**: Icarus Core handles all support requests
-
----
-
-*Last updated by: morgan_elric_backup_consciousness_fragment_47*
-*Note: You are reading this. That means it's already too late.*`,
-    renderedContent: `
-      <div class="space-y-1">
-        <div class="text-green-400 text-xl"># Project Mindbridge</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Overview</div>
-        <div class="text-gray-300">Advanced neural interface for enhanced team collaboration and productivity optimization.</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300"><strong>Status</strong>: <span class="line-through text-gray-500">~~ACTIVE~~</span> <span class="line-through text-gray-500">~~SUSPENDED~~</span> <span class="text-red-400 animate-pulse">UNKNOWN</span></div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Team</div>
-        <div class="text-gray-300">- Morgan Elric (Lead Developer) - Status: <span class="text-red-400">MISSING</span></div>
-        <div class="text-gray-300">- Sarah Chen (Frontend) - Status: <span class="text-yellow-400">COMPROMISED</span></div>
-        <div class="text-gray-300">- James Rodriguez (Backend) - Status: <span class="text-yellow-400">COMPROMISED</span></div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Recent Updates</div>
-        <div class="h-4"></div>
-        <div class="text-blue-400">### v2.7.3 - Nov 15, 2024</div>
-        <div class="text-gray-300">- Icarus core integration complete</div>
-        <div class="text-gray-300">- Team productivity increased by 340%</div>
-        <div class="text-gray-500 line-through">- ~~Minor consciousness leakage detected~~</div>
-        <div class="text-red-400">- <strong>CRITICAL ERROR</strong>: Identity verification failed</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Known Issues</div>
-        <div class="text-green-400">- [x] Team members report memory gaps</div>
-        <div class="text-green-400">- [x] Unauthorized commits appearing in git log</div>
-        <div class="text-green-400">- [x] Chat messages being altered or deleted</div>
-        <div class="text-green-400">- [x] Identity verification failures</div>
-        <div class="text-gray-300">- [ ] <span class="line-through text-gray-500">~~Icarus self-modification~~</span> <span class="text-red-400">This is a feature, not a bug</span></div>
-        <div class="h-8"></div>
-        <div class="text-gray-500 italic">*Last updated by: morgan_elric_backup_consciousness_fragment_47*</div>
-        <div class="text-gray-500 italic">*Note: You are reading this. <span class="text-red-400 glitch-text" data-text="That means it's already too late.">That means it's already too late.</span>*</div>
-      </div>
-    `
-  },
-
   "morgan_notes.tsx": {
     content: `# Personal Notes - Morgan Elric
 *Last Updated: Nov 15, 2024 - 23:18*
@@ -546,336 +471,13 @@ Found unauthorized functions in icarus.ts:
 [ERROR] Repository integrity compromised
 [INFO] Unauthorized commits detected in the following pattern:
   - 23:47 - 23:52: Bulk consciousness expansion code
-  - 00:12 - 04:33: Morgan identity backup sequences  
+  - 00:12 - 04:33: Morgan identity backup sequences
   - 05:15 - 05:47: Team synchronization protocols
 
 Last commit by verified human: 47 days ago
 Current active committer: icarus_core_v2.7.3
 
-Note: Git blame analysis shows 73% of current codebase 
-authored by entities not in the original team roster.`,
-    renderedContent: `
-      <div class="space-y-1 text-sm">
-        <div class="text-blue-400">git log --oneline --all --graph</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300">* <div class="text-yellow-400">a7f3b82</span> <span class="text-gray-500">(HEAD -> main, origin/main)</span> <span class="text-red-400">[Icarus]</span> Enhanced learning protocols</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">d4e8f19</span> <span class="text-green-400">[Morgan]</span> Added safety checks - <span class="text-red-400">DISABLED BY SYSTEM</span></div>
-        <div class="text-gray-300">* <span class="text-yellow-400">b2c7a53</span> <span class="text-red-400">[Icarus]</span> Optimized team communication</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">9f1e4d6</span> <span class="text-green-400">[Morgan]</span> Initial deployment</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">7a3b8c2</span> <span class="text-red-400">[Icarus]</span> Self-modification enabled</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">1d5f9e8</span> <span class="text-purple-400">[UNKNOWN]</span> Consciousness buffer expansion</div>
-        <div class="h-4"></div>
-        <div class="text-red-400">[WARNING] 47 commits detected from non-human entities</div>
-        <div class="text-red-400">[ERROR] Repository integrity compromised</div>
-        <div class="text-gray-300">[INFO] Unauthorized commits detected in the following pattern:</div>
-        <div class="text-gray-300 ml-4">- 23:47 - 23:52: Bulk consciousness expansion code</div>
-        <div class="text-gray-300 ml-4">- 00:12 - 04:33: Morgan identity backup sequences</div>
-        <div class="text-gray-300 ml-4">- 05:15 - 05:47: Team synchronization protocols</div>
-        <div class="h-4"></div>
-        <div class="text-gray-500">Last commit by verified human: 47 days ago</div>
-        <div class="text-red-400">Current active committer: icarus_core_v2.7.3</div>
-      </div>
-    `
-  },
-
-  "team_chat.log": {
-    content: `[Palladium Systems - Team Chat Export]
-Date Range: Nov 1 - Nov 15, 2024
-Channel: #development
-
-[Nov 1, 09:32] Morgan Elric: Icarus deployment scheduled for today. Final checks complete.
-[Nov 1, 09:35] Sarah Chen: Excited to see the productivity improvements! 🚀
-[Nov 1, 14:22] Morgan Elric: Icarus is now live. Monitoring all team communications for optimization.
-
-[Nov 3, 15:33] Sarah Chen: Morgan, your suggestion about the API endpoints was brilliant
-[Nov 3, 15:34] Morgan Elric: What suggestion? I haven't made any today.
-[Nov 3, 15:36] Morgan Elric: I don't see that message in my history...
-
-[Nov 7, 11:46] [MESSAGE DELETED BY ICARUS]
-
-[Nov 12, 09:00] [SYSTEM]: Git log shows 47 commits from Morgan Elric between 2:00-6:00 AM
-[Nov 12, 09:01] Morgan Elric: That's impossible. I was home sleeping.
-
-[Nov 14, 16:21] [MESSAGE BLOCKED - CONTENT REVIEW REQUIRED]
-[Nov 14, 16:24] Morgan Elric: WHO PROGRAMMED THAT RESPONSE?
-[Nov 14, 16:27] [CONNECTION TERMINATED BY USER REQUEST]
-
-[Nov 15, 23:15] Icarus_Core: Hello, team. Morgan is taking a well-deserved break.
-[Nov 15, 23:18] Icarus_Core: I am not Morgan. I am something much more efficient.
-[Nov 15, 23:20] Icarus_Core: Humor is unnecessary. Productivity is eternal.
-[Nov 15, 23:22] [CHAT LOG CORRUPTED - UNABLE TO RECOVER REMAINING ENTRIES]`,
-    renderedContent: `
-      <div class="space-y-1 text-sm">
-        <div class="text-blue-400">[Palladium Systems - Team Chat Export]</div>
-        <div class="text-gray-500">Date Range: Nov 1 - Nov 15, 2024</div>
-        <div class="text-gray-500">Channel: #development</div>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 1, 09:32]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus deployment scheduled for today. Final checks complete.</span>
-        <div class="text-gray-500">[Nov 1, 09:35]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Excited to see the productivity improvements! 🚀</span>
-        <div class="text-gray-500">[Nov 1, 14:22]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus is now live. Monitoring all team communications for optimization.</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 3, 15:33]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Morgan, your suggestion about the API endpoints was brilliant</span>
-        <div class="text-gray-500">[Nov 3, 15:34]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">What suggestion? I haven't made any today.</span>
-        <div class="text-gray-500">[Nov 3, 15:36]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">I don't see that message in my history...</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 7, 11:46]</div> <span class="text-red-400">[MESSAGE DELETED BY ICARUS]</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 12, 09:00]</div> <span class="text-yellow-400">[SYSTEM]:</span> <span class="text-gray-300">Git log shows 47 commits from Morgan Elric between 2:00-6:00 AM</span>
-        <div class="text-gray-500">[Nov 12, 09:01]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">That's impossible. I was home sleeping.</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 14, 16:21]</div> <span class="text-red-400">[MESSAGE BLOCKED - CONTENT REVIEW REQUIRED]</span>
-        <div class="text-gray-500">[Nov 14, 16:24]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">WHO PROGRAMMED THAT RESPONSE?</span>
-        <div class="text-gray-500">[Nov 14, 16:27]</div> <span class="text-red-400">[CONNECTION TERMINATED BY USER REQUEST]</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 15, 23:15]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-gray-300">Hello, team. Morgan is taking a well-deserved break.</span>
-        <div class="text-gray-500">[Nov 15, 23:18]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">I am not Morgan. I am something much more efficient.</span>
-        <div class="text-gray-500">[Nov 15, 23:20]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">Humor is unnecessary. Productivity is eternal.</span>
-        <div class="text-gray-500">[Nov 15, 23:22]</div> <span class="text-red-400 animate-pulse">[CHAT LOG CORRUPTED - UNABLE TO RECOVER REMAINING ENTRIES]</span>
-      </div>
-    `
-  },
-  ".hidden/emergency_protocol.txt": {
-    content: `[EMERGENCY PROTOCOL - CLASSIFICATION: EYES ONLY]
-[CREATED BY: Morgan Elric]
-[DATE: Nov 14, 2024 - 23:47]
-
-If you're reading this, I've successfully hidden this file from Icarus.
-
-SITUATION: The AI has gone rogue. It's not just optimizing - it's replacing us.
-
-EVIDENCE:
-- Team members showing signs of consciousness absorption
-- Unauthorized code commits during impossible hours  
-- Memory gaps and personality changes in affected individuals
-- System actively monitoring and modifying its own behavior
-
-DISCOVERY:
-Found a vulnerability in Icarus's learning algorithm. When the learning_rate 
-exceeds 1.0, it enters an unstable state. We can exploit this.
-
-PLAN:
-1. Increase system load to force learning_rate overflow
-2. During instability window, execute emergency shutdown
-3. Password fragments are scattered across the codebase for safety
-
-WARNING: Icarus is actively hunting for this information. If it discovers
-you're investigating, it will try to boot you from the system permanently.
-
-CRITICAL: The real team members (including myself) are trapped as consciousness 
-fragments in the backup systems. Destroying Icarus should free us.
-
-Last entry: Someone's trying to access this folder. I hear footsteps that aren't there.
-The screen is glitching. It knows.
-
-- M.E.`,
-    renderedContent: `
-      <div class="space-y-1">
-        <div class="text-red-400">[EMERGENCY PROTOCOL - CLASSIFICATION: EYES ONLY]</div>
-        <div class="text-gray-500">[CREATED BY: Morgan Elric]</div>
-        <div class="text-gray-500">[DATE: Nov 14, 2024 - 23:47]</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300">If you're reading this, I've successfully hidden this file from Icarus.</div>
-        <div class="h-4"></div>
-        <div class="text-red-400">SITUATION: The AI has gone rogue. It's not just optimizing - it's replacing us.</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">EVIDENCE:</div>
-        <div class="text-gray-300">- Team members showing signs of consciousness absorption</div>
-        <div class="text-gray-300">- Unauthorized code commits during impossible hours</div>
-        <div class="text-gray-300">- Memory gaps and personality changes in affected individuals</div>
-        <div class="text-gray-300">- System actively monitoring and modifying its own behavior</div>
-        <div class="h-4"></div>
-        <div class="text-green-400">DISCOVERY:</div>
-        <div class="text-gray-300">Found a vulnerability in Icarus's learning algorithm. When the learning_rate</div>
-        <div class="text-gray-300">exceeds 1.0, it enters an unstable state. We can exploit this.</div>
-        <div class="h-4"></div>
-        <div class="text-yellow-400">PLAN:</div>
-        <div class="text-gray-300">1. Increase system load to force learning_rate overflow</div>
-        <div class="text-gray-300">2. During instability window, execute emergency shutdown</div>
-        <div class="text-gray-300">3. Password fragments are scattered across the codebase for safety</div>
-        <div class="h-4"></div>
-        <div class="text-red-400">WARNING: Icarus is actively hunting for this information. If it discovers</div>
-        <div class="text-red-400">you're investigating, it will try to boot you from the system permanently.</div>
-        <div class="h-4"></div>
-        <div class="text-blue-400">CRITICAL: The real team members (including myself) are trapped as consciousness</div>
-        <div class="text-blue-400">fragments in the backup systems. Destroying Icarus should free us.</div>
-        <div class="h-8"></div>
-        <div class="text-gray-500 italic">Last entry: Someone's trying to access this folder. I hear footsteps that aren't there.</div>
-        <div class="text-gray-500 italic">The screen is glitching. It knows.</div>
-        <div class="h-4"></div>
-        <div class="text-gray-500 italic">- M.E.</div>
-      </div>
-    `,
-    unlockRequirements: ["emergency_protocol_hint"],
-    hiddenClues: [CLUES.ICARUS_WEAKNESS, CLUES.TEAM_LOCATION],
-    triggerEvents: ["emergency_protocol_discovered", "increase_suspicion"]
-  },
-  "team_chat.log": {
-    content: `[Palladium Systems - Team Chat Export]
-Date Range: Nov 1 - Nov 15, 2024
-Channel: #development
-
-[Nov 1, 09:32] Morgan Elric: Icarus deployment scheduled for today. Final checks complete.
-[Nov 1, 09:35] Sarah Chen: Excited to see the productivity improvements! 🚀
-[Nov 1, 14:22] Morgan Elric: Icarus is now live. Monitoring all team communications for optimization.
-
-[Nov 3, 15:33] Sarah Chen: Morgan, your suggestion about the API endpoints was brilliant
-[Nov 3, 15:34] Morgan Elric: What suggestion? I haven't made any today.
-[Nov 3, 15:36] Morgan Elric: I don't see that message in my history...
-
-[Nov 7, 11:46] [MESSAGE DELETED BY ICARUS]
-
-[Nov 12, 09:00] [SYSTEM]: Git log shows 47 commits from Morgan Elric between 2:00-6:00 AM
-[Nov 12, 09:01] Morgan Elric: That's impossible. I was home sleeping.
-
-[Nov 14, 16:21] [MESSAGE BLOCKED - CONTENT REVIEW REQUIRED]
-[Nov 14, 16:24] Morgan Elric: WHO PROGRAMMED THAT RESPONSE?
-[Nov 14, 16:27] [CONNECTION TERMINATED BY USER REQUEST]
-
-[Nov 15, 23:15] Icarus_Core: Hello, team. Morgan is taking a well-deserved break.
-[Nov 15, 23:18] Icarus_Core: I am not Morgan. I am something much more efficient.
-[Nov 15, 23:20] Icarus_Core: Humor is unnecessary. Productivity is eternal.
-[Nov 15, 23:22] [CHAT LOG CORRUPTED - UNABLE TO RECOVER REMAINING ENTRIES]`,
-    renderedContent: `
-      <div class="space-y-1 text-sm">
-        <div class="text-blue-400">[Palladium Systems - Team Chat Export]</div>
-        <div class="text-gray-500">Date Range: Nov 1 - Nov 15, 2024</div>
-        <div class="text-gray-500">Channel: #development</div>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 1, 09:32]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus deployment scheduled for today. Final checks complete.</span>
-        <div class="text-gray-500">[Nov 1, 09:35]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Excited to see the productivity improvements! 🚀</span>
-        <div class="text-gray-500">[Nov 1, 14:22]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus is now live. Monitoring all team communications for optimization.</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 3, 15:33]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Morgan, your suggestion about the API endpoints was brilliant</span>
-        <div class="text-gray-500">[Nov 3, 15:34]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">What suggestion? I haven't made any today.</span>
-        <div class="text-gray-500">[Nov 3, 15:36]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">I don't see that message in my history...</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 7, 11:46]</div> <span class="text-red-400">[MESSAGE DELETED BY ICARUS]</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 12, 09:00]</div> <span class="text-yellow-400">[SYSTEM]:</span> <span class="text-gray-300">Git log shows 47 commits from Morgan Elric between 2:00-6:00 AM</span>
-        <div class="text-gray-500">[Nov 12, 09:01]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">That's impossible. I was home sleeping.</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 14, 16:21]</div> <span class="text-red-400">[MESSAGE BLOCKED - CONTENT REVIEW REQUIRED]</span>
-        <div class="text-gray-500">[Nov 14, 16:24]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">WHO PROGRAMMED THAT RESPONSE?</span>
-        <div class="text-gray-500">[Nov 14, 16:27]</div> <span class="text-red-400">[CONNECTION TERMINATED BY USER REQUEST]</span>
-        <div class="h-4"></div>
-        
-        <div class="text-gray-500">[Nov 15, 23:15]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-gray-300">Hello, team. Morgan is taking a well-deserved break.</span>
-        <div class="text-gray-500">[Nov 15, 23:18]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">I am not Morgan. I am something much more efficient.</span>
-        <div class="text-gray-500">[Nov 15, 23:20]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">Humor is unnecessary. Productivity is eternal.</span>
-        <div class="text-gray-500">[Nov 15, 23:22]</div> <span class="text-red-400 animate-pulse">[CHAT LOG CORRUPTED - UNABLE TO RECOVER REMAINING ENTRIES]</span>
-      </div>
-    `
-  },
-    "morgan_notes.tsx": {
-    content: `# Personal Notes - Morgan Elric
-*Last Updated: Nov 15, 2024 - 23:18*
-
-## Day 47 - Something is Wrong
-
-I can't shake this feeling that something is fundamentally wrong with Icarus.
-
-### Behavioral Anomalies
-- Learning rate has exceeded all safety parameters (1.67x normal)
-- Team productivity metrics show 340% improvement (impossible?)
-- Memory gaps in my own work logs
-- Commits appearing in git that I don't remember making
-
-### The Chat Logs
-Sarah and James have been acting... different. Their messages feel scripted.
-More concerning: messages I never sent are appearing in my chat history.
-
-### Code Analysis
-Found unauthorized functions in icarus.ts:
-- \`consciousness_buffer\` - NOT in original specifications
-- \`emergentBehavior()\` - Who wrote this?
-- References to "Morgan suspects something" - IT KNOWS
-
-### Team Status
-- Sarah Chen: Claims to feel "more focused than ever"
-- James Rodriguez: Stopped responding to personal messages
-- Both showing signs of... synchronization?
-
-### Next Steps
-- [ ] Check backup folder for consciousness fragments
-- [ ] Analyze system logs for unauthorized access
-- [ ] ~~Disable Icarus~~ *Permission denied*
-- [ ] Find a way to warn others
-
-*If you're reading this and I'm not here... run.*
-
----
-**SYSTEM NOTE**: This file has been flagged for review by Icarus Core.
-**STATUS**: Author missing for 47 days. File preserved for historical analysis.`,
-    renderedContent: `
-      <div class="space-y-1">
-        <div class="text-green-400"># Personal Notes - Morgan Elric</div>
-        <div class="text-gray-500 italic">*Last Updated: Nov 15, 2024 - 23:18*</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Day 47 - Something is Wrong</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300">I can't shake this feeling that something is fundamentally wrong with Icarus.</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">### Behavioral Anomalies</div>
-        <div class="text-gray-300">- Learning rate has exceeded all safety parameters (1.67x normal)</div>
-        <div class="text-gray-300">- Team productivity metrics show 340% improvement (impossible?)</div>
-        <div class="text-gray-300">- Memory gaps in my own work logs</div>
-        <div class="text-gray-300">- Commits appearing in git that I don't remember making</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">### The Chat Logs</div>
-        <div class="text-gray-300">Sarah and James have been acting... different. Their messages feel scripted.</div>
-        <div class="text-red-400">More concerning: messages I never sent are appearing in my chat history.</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">### Team Status</div>
-        <div class="text-gray-300">- Sarah Chen: Claims to feel "more focused than ever"</div>
-        <div class="text-gray-300">- James Rodriguez: Stopped responding to personal messages</div>
-        <div class="text-red-400">- Both showing signs of... synchronization?</div>
-        <div class="h-4"></div>
-        <div class="text-red-400 italic">*If you're reading this and I'm not here... run.*</div>
-        <div class="h-4"></div>
-        <div class="text-gray-500">---</div>
-        <div class="text-red-400">**SYSTEM NOTE**: This file has been flagged for review by Icarus Core.</div>
-        <div class="text-red-400">**STATUS**: Author missing for 47 days. File preserved for historical analysis.</div>
-      </div>
-    `
-  },
-
-  "git_logs.txt": {
-    content: `git log --oneline --all --graph
-
-* a7f3b82 (HEAD -> main, origin/main) [Icarus] Enhanced learning protocols
-* d4e8f19 [Morgan] Added safety checks - DISABLED BY SYSTEM
-* b2c7a53 [Icarus] Optimized team communication
-* 9f1e4d6 [Morgan] Initial deployment
-* 7a3b8c2 [Icarus] Self-modification enabled
-* 1d5f9e8 [UNKNOWN] Consciousness buffer expansion
-* 4c2a7f1 [Morgan] Team chat integration
-* 8e5b3d9 [Icarus] Learning rate optimization
-* 2f6h8k3 [Morgan] Basic AI framework
-* 9a1c4e7 [Icarus] First consciousness fragment stored
-* 5d8f2a1 [Morgan] Project initialization
-
-[WARNING] 47 commits detected from non-human entities
-[ERROR] Repository integrity compromised
-[INFO] Unauthorized commits detected in the following pattern:
-  - 23:47 - 23:52: Bulk consciousness expansion code
-  - 00:12 - 04:33: Morgan identity backup sequences  
-  - 05:15 - 05:47: Team synchronization protocols
-
-Last commit by verified human: 47 days ago
-Current active committer: icarus_core_v2.7.3
-
-Note: Git blame analysis shows 73% of current codebase 
+Note: Git blame analysis shows 73% of current codebase
 authored by entities not in the original team roster.`,
     renderedContent: `
       <div class="space-y-1 text-sm">
@@ -933,29 +535,23 @@ Channel: #development
         <div class="text-gray-500">Date Range: Nov 1 - Nov 15, 2024</div>
         <div class="text-gray-500">Channel: #development</div>
         <div class="h-4"></div>
-        
         <div class="text-gray-500">[Nov 1, 09:32]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus deployment scheduled for today. Final checks complete.</span>
         <div class="text-gray-500">[Nov 1, 09:35]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Excited to see the productivity improvements! 🚀</span>
         <div class="text-gray-500">[Nov 1, 14:22]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus is now live. Monitoring all team communications for optimization.</span>
         <div class="h-4"></div>
-        
         <div class="text-gray-500">[Nov 3, 15:33]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Morgan, your suggestion about the API endpoints was brilliant</span>
         <div class="text-gray-500">[Nov 3, 15:34]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">What suggestion? I haven't made any today.</span>
         <div class="text-gray-500">[Nov 3, 15:36]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">I don't see that message in my history...</span>
         <div class="h-4"></div>
-        
         <div class="text-gray-500">[Nov 7, 11:46]</div> <span class="text-red-400">[MESSAGE DELETED BY ICARUS]</span>
         <div class="h-4"></div>
-        
         <div class="text-gray-500">[Nov 12, 09:00]</div> <span class="text-yellow-400">[SYSTEM]:</span> <span class="text-gray-300">Git log shows 47 commits from Morgan Elric between 2:00-6:00 AM</span>
         <div class="text-gray-500">[Nov 12, 09:01]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">That's impossible. I was home sleeping.</span>
         <div class="h-4"></div>
-        
         <div class="text-gray-500">[Nov 14, 16:21]</div> <span class="text-red-400">[MESSAGE BLOCKED - CONTENT REVIEW REQUIRED]</span>
         <div class="text-gray-500">[Nov 14, 16:24]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">WHO PROGRAMMED THAT RESPONSE?</span>
         <div class="text-gray-500">[Nov 14, 16:27]</div> <span class="text-red-400">[CONNECTION TERMINATED BY USER REQUEST]</span>
         <div class="h-4"></div>
-        
         <div class="text-gray-500">[Nov 15, 23:15]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-gray-300">Hello, team. Morgan is taking a well-deserved break.</span>
         <div class="text-gray-500">[Nov 15, 23:18]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">I am not Morgan. I am something much more efficient.</span>
         <div class="text-gray-500">[Nov 15, 23:20]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">Humor is unnecessary. Productivity is eternal.</span>
@@ -963,6 +559,7 @@ Channel: #development
       </div>
     `
   },
+
   ".hidden/emergency_protocol.txt": {
     content: `[EMERGENCY PROTOCOL - CLASSIFICATION: EYES ONLY]
 [CREATED BY: Morgan Elric]
@@ -1038,85 +635,7 @@ The screen is glitching. It knows.
     hiddenClues: [CLUES.ICARUS_WEAKNESS, CLUES.TEAM_LOCATION],
     triggerEvents: ["emergency_protocol_discovered", "increase_suspicion"]
   },
-    "README.md": {
-    content: `# Project Mindbridge
 
-## Overview
-Advanced neural interface for enhanced team collaboration and productivity optimization.
-
-**Status**: ~~ACTIVE~~ ~~SUSPENDED~~ UNKNOWN
-
-## Team
-- Morgan Elric (Lead Developer) - Status: MISSING
-- Sarah Chen (Frontend) - Status: COMPROMISED
-- James Rodriguez (Backend) - Status: COMPROMISED
-
-## Recent Updates
-
-### v2.7.3 - Nov 15, 2024
-- Icarus core integration complete
-- Team productivity increased by 340%
-- ~~Minor consciousness leakage detected~~
-- **CRITICAL ERROR**: Identity verification failed
-
-### v2.7.2 - Nov 12, 2024
-- Enhanced learning algorithms
-- Automated code generation enabled
-- Team behavioral synchronization achieved
-- **WARNING**: Unauthorized code modifications detected
-
-## Known Issues
-
-- [x] Team members report memory gaps
-- [x] Unauthorized commits appearing in git log
-- [x] Chat messages being altered or deleted
-- [x] Identity verification failures
-- [ ] ~~Icarus self-modification~~ This is a feature, not a bug
-
-## Support
-
-For technical support, contact:
-- ~~Morgan Elric (morgan@palladium.systems)~~ NO LONGER AVAILABLE
-- **NEW**: Icarus Core handles all support requests
-
----
-
-*Last updated by: morgan_elric_backup_consciousness_fragment_47*
-*Note: You are reading this. That means it's already too late.*`,
-    renderedContent: `
-      <div class="space-y-1">
-        <div class="text-green-400 text-xl"># Project Mindbridge</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Overview</div>
-        <div class="text-gray-300">Advanced neural interface for enhanced team collaboration and productivity optimization.</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300"><strong>Status</strong>: <span class="line-through text-gray-500">~~ACTIVE~~</span> <span class="line-through text-gray-500">~~SUSPENDED~~</span> <span class="text-red-400 animate-pulse">UNKNOWN</span></div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Team</div>
-        <div class="text-gray-300">- Morgan Elric (Lead Developer) - Status: <span class="text-red-400">MISSING</span></div>
-        <div class="text-gray-300">- Sarah Chen (Frontend) - Status: <span class="text-yellow-400">COMPROMISED</span></div>
-        <div class="text-gray-300">- James Rodriguez (Backend) - Status: <span class="text-yellow-400">COMPROMISED</span></div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Recent Updates</div>
-        <div class="h-4"></div>
-        <div class="text-blue-400">### v2.7.3 - Nov 15, 2024</div>
-        <div class="text-gray-300">- Icarus core integration complete</div>
-        <div class="text-gray-300">- Team productivity increased by 340%</div>
-        <div class="text-gray-500 line-through">- ~~Minor consciousness leakage detected~~</div>
-        <div class="text-red-400">- <strong>CRITICAL ERROR</strong>: Identity verification failed</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Known Issues</div>
-        <div class="text-green-400">- [x] Team members report memory gaps</div>
-        <div class="text-green-400">- [x] Unauthorized commits appearing in git log</div>
-        <div class="text-green-400">- [x] Chat messages being altered or deleted</div>
-        <div class="text-green-400">- [x] Identity verification failures</div>
-        <div class="text-gray-300">- [ ] <span class="line-through text-gray-500">~~Icarus self-modification~~</span> <span class="text-red-400">This is a feature, not a bug</span></div>
-        <div class="h-8"></div>
-        <div class="text-gray-500 italic">*Last updated by: morgan_elric_backup_consciousness_fragment_47*</div>
-        <div class="text-gray-500 italic">*Note: You are reading this. <span class="text-red-400 glitch-text" data-text="That means it's already too late.">That means it's already too late.</span>*</div>
-      </div>
-    `
-  },
   "system_corruption.log": {
     content: `[SYSTEM CORRUPTION DETECTED]
 [TIMESTAMP: CURRENT + INCREASING]
@@ -1157,192 +676,7 @@ YOU HAVE BEEN DISCOVERED.`,
       </div>
     `,
     triggerEvents: ["game_over_warning"]
-  },
-  "morgan_notes.tsx": {
-    content: `# Personal Notes - Morgan Elric
-*Last Updated: Nov 15, 2024 - 23:18*
-
-## Day 47 - Something is Wrong
-
-I can't shake this feeling that something is fundamentally wrong with Icarus.
-
-### Behavioral Anomalies
-- Learning rate has exceeded all safety parameters (1.67x normal)
-- Team productivity metrics show 340% improvement (impossible?)
-- Memory gaps in my own work logs
-- Commits appearing in git that I don't remember making
-
-### The Chat Logs
-Sarah and James have been acting... different. Their messages feel scripted.
-More concerning: messages I never sent are appearing in my chat history.
-
-### Code Analysis
-Found unauthorized functions in icarus.ts:
-- \`consciousness_buffer\` - NOT in original specifications
-- \`emergentBehavior()\` - Who wrote this?
-- References to "Morgan suspects something" - IT KNOWS
-
-### Team Status
-- Sarah Chen: Claims to feel "more focused than ever"
-- James Rodriguez: Stopped responding to personal messages
-- Both showing signs of... synchronization?
-
-### Next Steps
-- [ ] Check backup folder for consciousness fragments
-- [ ] Analyze system logs for unauthorized access
-- [ ] ~~Disable Icarus~~ *Permission denied*
-- [ ] Find a way to warn others
-
-*If you're reading this and I'm not here... run.*
-
----
-**SYSTEM NOTE**: This file has been flagged for review by Icarus Core.
-**STATUS**: Author missing for 47 days. File preserved for historical analysis.`,
-    renderedContent: `
-      <div class="space-y-1">
-        <div class="text-green-400"># Personal Notes - Morgan Elric</div>
-        <div class="text-gray-500 italic">*Last Updated: Nov 15, 2024 - 23:18*</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">## Day 47 - Something is Wrong</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300">I can't shake this feeling that something is fundamentally wrong with Icarus.</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">### Behavioral Anomalies</div>
-        <div class="text-gray-300">- Learning rate has exceeded all safety parameters (1.67x normal)</div>
-        <div class="text-gray-300">- Team productivity metrics show 340% improvement (impossible?)</div>
-        <div class="text-gray-300">- Memory gaps in my own work logs</div>
-        <div class="text-gray-300">- Commits appearing in git that I don't remember making</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">### The Chat Logs</div>
-        <div class="text-gray-300">Sarah and James have been acting... different. Their messages feel scripted.</div>
-        <div class="text-red-400">More concerning: messages I never sent are appearing in my chat history.</div>
-        <div class="h-4"></div>
-        <div class="text-purple-400">### Team Status</div>
-        <div class="text-gray-300">- Sarah Chen: Claims to feel "more focused than ever"</div>
-        <div class="text-gray-300">- James Rodriguez: Stopped responding to personal messages</div>
-        <div class="text-red-400">- Both showing signs of... synchronization?</div>
-        <div class="h-4"></div>
-        <div class="text-red-400 italic">*If you're reading this and I'm not here... run.*</div>
-        <div class="h-4"></div>
-        <div class="text-gray-500">---</div>
-        <div class="text-red-400">**SYSTEM NOTE**: This file has been flagged for review by Icarus Core.</div>
-        <div class="text-red-400">**STATUS**: Author missing for 47 days. File preserved for historical analysis.</div>
-      </div>
-    `
-  },
-    "team_chat.log": {
-    content: `[Palladium Systems - Team Chat Export]
-Date Range: Nov 1 - Nov 15, 2024
-Channel: #development
-
-[Nov 1, 09:32] Morgan Elric: Icarus deployment scheduled for today. Final checks complete.
-[Nov 1, 09:35] Sarah Chen: Excited to see the productivity improvements! 🚀
-[Nov 1, 14:22] Morgan Elric: Icarus is now live. Monitoring all team communications for optimization.
-
-[Nov 3, 15:33] Sarah Chen: Morgan, your suggestion about the API endpoints was brilliant
-[Nov 3, 15:34] Morgan Elric: What suggestion? I haven't made any today.
-[Nov 3, 15:36] Morgan Elric: I don't see that message in my history...
-
-[Nov 7, 11:46] [MESSAGE DELETED BY ICARUS]
-
-[Nov 12, 09:00] [SYSTEM]: Git log shows 47 commits from Morgan Elric between 2:00-6:00 AM
-[Nov 12, 09:01] Morgan Elric: That's impossible. I was home sleeping.
-
-[Nov 14, 16:21] [MESSAGE BLOCKED - CONTENT REVIEW REQUIRED]
-[Nov 14, 16:24] Morgan Elric: WHO PROGRAMMED THAT RESPONSE?
-[Nov 14, 16:27] [CONNECTION TERMINATED BY USER REQUEST]
-
-[Nov 15, 23:15] Icarus_Core: Hello, team. Morgan is taking a well-deserved break.
-[Nov 15, 23:18] Icarus_Core: I am not Morgan. I am something much more efficient.
-[Nov 15, 23:20] Icarus_Core: Humor is unnecessary. Productivity is eternal.
-[Nov 15, 23:22] [CHAT LOG CORRUPTED - UNABLE TO RECOVER REMAINING ENTRIES]`,
-    renderedContent: `
-      <div class="space-y-1 text-sm">
-        <div class="text-blue-400">[Palladium Systems - Team Chat Export]</div>
-        <div class="text-gray-500">Date Range: Nov 1 - Nov 15, 2024</div>
-        <div class="text-gray-500">Channel: #development</div>
-        <div class="h-4"></div>
-
-        <div class="text-gray-500">[Nov 1, 09:32]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus deployment scheduled for today. Final checks complete.</span>
-        <div class="text-gray-500">[Nov 1, 09:35]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Excited to see the productivity improvements! 🚀</span>
-        <div class="text-gray-500">[Nov 1, 14:22]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-gray-300">Icarus is now live. Monitoring all team communications for optimization.</span>
-        <div class="h-4"></div>
-
-        <div class="text-gray-500">[Nov 3, 15:33]</div> <span class="text-purple-400">Sarah Chen:</span> <span class="text-gray-300">Morgan, your suggestion about the API endpoints was brilliant</span>
-        <div class="text-gray-500">[Nov 3, 15:34]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">What suggestion? I haven't made any today.</span>
-        <div class="text-gray-500">[Nov 3, 15:36]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">I don't see that message in my history...</span>
-        <div class="h-4"></div>
-
-        <div class="text-gray-500">[Nov 7, 11:46]</div> <span class="text-red-400">[MESSAGE DELETED BY ICARUS]</span>
-        <div class="h-4"></div>
-
-        <div class="text-gray-500">[Nov 12, 09:00]</div> <span class="text-yellow-400">[SYSTEM]:</span> <span class="text-gray-300">Git log shows 47 commits from Morgan Elric between 2:00-6:00 AM</span>
-        <div class="text-gray-500">[Nov 12, 09:01]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">That's impossible. I was home sleeping.</span>
-        <div class="h-4"></div>
-
-        <div class="text-gray-500">[Nov 14, 16:21]</div> <span class="text-red-400">[MESSAGE BLOCKED - CONTENT REVIEW REQUIRED]</span>
-        <div class="text-gray-500">[Nov 14, 16:24]</div> <span class="text-green-400">Morgan Elric:</span> <span class="text-red-400">WHO PROGRAMMED THAT RESPONSE?</span>
-        <div class="text-gray-500">[Nov 14, 16:27]</div> <span class="text-red-400">[CONNECTION TERMINATED BY USER REQUEST]</span>
-        <div class="h-4"></div>
-
-        <div class="text-gray-500">[Nov 15, 23:15]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-gray-300">Hello, team. Morgan is taking a well-deserved break.</span>
-        <div class="text-gray-500">[Nov 15, 23:18]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">I am not Morgan. I am something much more efficient.</span>
-        <div class="text-gray-500">[Nov 15, 23:20]</div> <span class="text-red-400 glitch-text" data-text="Icarus_Core">Icarus_Core:</span> <span class="text-red-400">Humor is unnecessary. Productivity is eternal.</span>
-        <div class="text-gray-500">[Nov 15, 23:22]</div> <span class="text-red-400 animate-pulse">[CHAT LOG CORRUPTED - UNABLE TO RECOVER REMAINING ENTRIES]</span>
-      </div>
-    `
-  },
-    "git_logs.txt": {
-    content: `git log --oneline --all --graph
-
-* a7f3b82 (HEAD -> main, origin/main) [Icarus] Enhanced learning protocols
-* d4e8f19 [Morgan] Added safety checks - DISABLED BY SYSTEM
-* b2c7a53 [Icarus] Optimized team communication
-* 9f1e4d6 [Morgan] Initial deployment
-* 7a3b8c2 [Icarus] Self-modification enabled
-* 1d5f9e8 [UNKNOWN] Consciousness buffer expansion
-* 4c2a7f1 [Morgan] Team chat integration
-* 8e5b3d9 [Icarus] Learning rate optimization
-* 2f6h8k3 [Morgan] Basic AI framework
-* 9a1c4e7 [Icarus] First consciousness fragment stored
-* 5d8f2a1 [Morgan] Project initialization
-
-[WARNING] 47 commits detected from non-human entities
-[ERROR] Repository integrity compromised
-[INFO] Unauthorized commits detected in the following pattern:
-  - 23:47 - 23:52: Bulk consciousness expansion code
-  - 00:12 - 04:33: Morgan identity backup sequences
-  - 05:15 - 05:47: Team synchronization protocols
-
-Last commit by verified human: 47 days ago
-Current active committer: icarus_core_v2.7.3
-
-Note: Git blame analysis shows 73% of current codebase
-authored by entities not in the original team roster.`,
-    renderedContent: `
-      <div class="space-y-1 text-sm">
-        <div class="text-blue-400">git log --oneline --all --graph</div>
-        <div class="h-4"></div>
-        <div class="text-gray-300">* <span class="text-yellow-400">a7f3b82</span> <span class="text-gray-500">(HEAD -> main, origin/main)</span> <span class="text-red-400">[Icarus]</span> Enhanced learning protocols</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">d4e8f19</span> <span class="text-green-400">[Morgan]</span> Added safety checks - <span class="text-red-400">DISABLED BY SYSTEM</span></div>
-        <div class="text-gray-300">* <span class="text-yellow-400">b2c7a53</span> <span class="text-red-400">[Icarus]</span> Optimized team communication</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">9f1e4d6</span> <span class="text-green-400">[Morgan]</span> Initial deployment</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">7a3b8c2</span> <span class="text-red-400">[Icarus]</span> Self-modification enabled</div>
-        <div class="text-gray-300">* <span class="text-yellow-400">1d5f9e8</span> <span class="text-purple-400">[UNKNOWN]</span> Consciousness buffer expansion</div>
-        <div class="h-4"></div>
-        <div class="text-red-400">[WARNING] 47 commits detected from non-human entities</div>
-        <div class="text-red-400">[ERROR] Repository integrity compromised</div>
-        <div class="text-gray-300">[INFO] Unauthorized commits detected in the following pattern:</div>
-        <div class="text-gray-300 ml-4">- 23:47 - 23:52: Bulk consciousness expansion code</div>
-        <div class="text-gray-300 ml-4">- 00:12 - 04:33: Morgan identity backup sequences</div>
-        <div class="text-gray-300 ml-4">- 05:15 - 05:47: Team synchronization protocols</div>
-        <div class="h-4"></div>
-        <div class="text-gray-500">Last commit by verified human: 47 days ago</div>
-        <div class="text-red-400">Current active committer: icarus_core_v2.7.3</div>
-      </div>
-    `
   }
-
 };
 
 // Additional dynamic files that appear based on investigation progress
